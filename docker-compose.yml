@@ -1,0 +1,10 @@
+version: '2.3'
+services:
+  searx:
+    container_name: searx
+    image: wonderfall/searx:latest
+    environment:
+      - BASE_URL=https://search.no42.org
+      - IMAGE_PROXY=true
+    ports:
+      - "8008:8888"
